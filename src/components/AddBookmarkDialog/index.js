@@ -9,7 +9,6 @@ export default function AddBookmarkDialog({ closeModal }) {
     var { title, content } = formRef.current;
     title = title.value;
     content = content.value;
-    console.log(title, content);
 
     await axios.post("http://localhost:1337/bookmarks", {
       title,
